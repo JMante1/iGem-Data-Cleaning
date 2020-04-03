@@ -122,7 +122,7 @@ df_all['Role_Name'] = df_all['role1.value'].map(dict_min_len['Role_Name'])
     
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #drop unnecessar columns
-df_all1 = df_all.drop(columns=['descript.datatype', 'descript.type',
+df_all = df_all.drop(columns=['descript.datatype', 'descript.type',
        'discontinued.type', 'displayId.type', 'dominant.type',
        'notes.datatype', 'notes.type', 'role1.type',
        'role2.type', 's.type', 'seq.type', 'source.type', 'subpart.type',
