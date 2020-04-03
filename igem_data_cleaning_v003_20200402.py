@@ -114,16 +114,19 @@ dict_min_len = df_min_len.to_dict()
 #add a column with the minimum length for each row
 df_all['Min_Len_Param'] = df_all['role1.value'].map(dict_min_len['Min_Len'])
 
+#add a column with the maximum length for each row
+df_all['Max_Len_Param'] = df_all['role1.value'].map(dict_min_len['Max_Len'])
+
 #add a column with the common role name for each row
 df_all['Role_Name'] = df_all['role1.value'].map(dict_min_len['Role_Name'])
     
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #drop unnecessar columns
-df_all = df_all[['s.value', 'Role_Name','discontinued.value',
-                 'dominant.value','role1.value', 'role2.value', 
-                 'subpart.value', 'seq.value', 'descript.value', 
-                 'notes.value', 'source.value', 'Min_Len_Param',
-                 'Equal', 'Basic']]
+df_all1 = df_all.drop(columns=['descript.datatype', 'descript.type',
+       'discontinued.type', 'displayId.type', 'dominant.type',
+       'notes.datatype', 'notes.type', 'role1.type',
+       'role2.type', 's.type', 'seq.type', 'source.type', 'subpart.type',
+       'title.type', 'title.value'])
 
 """Duplicates mask"""
 #sort by sequence value
@@ -146,6 +149,10 @@ df_all['Inverse_Dupe_By_Role'] = ~df_all['Dupe_By_Role']
 """Filters"""
 #column added with an integer value of sequence length
 df_all['Seq_Len'] = df_all['seq.value'].str.len()
+
+#If under max length true
+df_all['Under_Max_Len'] = np.where(df_all['Seq_Len']<df_all['Max_Len_Param'], True, False)
+
 
 #If over min length true
 df_all['Over_Min_Len'] = np.where(df_all['Seq_Len']>df_all['Min_Len_Param'], True, False)
