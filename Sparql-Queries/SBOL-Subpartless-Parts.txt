@@ -1,0 +1,49 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sbh: <http://wiki.synbiohub.org/wiki/Terms/synbiohub#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sbol: <http://sbols.org/v2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.obolibrary.org/obo/>
+PREFIX igem: <http://wiki.synbiohub.org/wiki/Terms/igem#>
+
+#https://synbiohub.org/public/igem/BBa_K1428000/1 is an interesting case to look at
+#can have parts with no subparts but seqAnnotations with defined roles
+
+SELECT
+    #(COUNT(?s) as ?count)
+    ?s
+		?discontinued
+		?dominant
+    ?displayId
+    ?title
+  	?role1
+		?descript
+		?notes
+		?source
+    ?seq
+
+WHERE {
+        FILTER regex(?role1, "identifiers")
+        
+
+    ?s a sbol:ComponentDefinition .    
+    ?s sbol:sequence/sbol:elements ?seq .
+    <https://synbiohub.org/public/igem/igem_collection/1> sbol:member ?s .
+    
+  	?s sbol:role ?role1 .
+  
+  		OPTIONAL {?s igem:discontinued ?discontinued} .
+  		OPTIONAL {?s igem:dominant ?dominant} . 
+      OPTIONAL {?s sbol:displayId ?displayId} .
+      OPTIONAL {?s dcterms:title ?title} .
+  		OPTIONAL {?s sbh:mutableDescription ?descript} .
+  		OPTIONAL {?s sbh:mutableNotes ?notes} .
+  		OPTIONAL {?s sbh:mutableProvenance ?source} .
+  
+  FILTER NOT EXISTS {?s sbol:component ?subcomponent .}
+  }
+
+Limit 10000 Offset replacehere

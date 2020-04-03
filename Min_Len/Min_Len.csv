@@ -1,0 +1,17 @@
+Role_SO,Role_Name,Min_Len
+http://identifiers.org/so/SO:0000316,CDS,40
+http://identifiers.org/so/SO:0000340,Chromosome,6
+http://identifiers.org/so/SO:0000804,Engineered Region,6
+http://identifiers.org/so/SO:0000834,Mature Transcript Region,6
+http://identifiers.org/so/SO:0000724,OriT,6
+http://identifiers.org/so/SO:0000155,Plasmid,40
+http://identifiers.org/so/SO:0000755,Plasmid Vector,40
+http://identifiers.org/so/SO:0000417,Polypeptide Domain,6
+http://identifiers.org/so/SO:0000112,Primer,6
+http://identifiers.org/so/SO:0000167,Promoter,6
+http://identifiers.org/so/SO:0001953,Restriction Enzyme Assembly Scar,6
+http://identifiers.org/so/SO:0000139,Ribosome Entry Site,6
+http://identifiers.org/so/SO:0000110,Sequence feature,6
+http://identifiers.org/so/SO:0001207,T7 RNA Polymerase Promoter,6
+http://identifiers.org/so/SO:0000324,Tag,6
+http://identifiers.org/so/SO:0000141,Terminator,6
