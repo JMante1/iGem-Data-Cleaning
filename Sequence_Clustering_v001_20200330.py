@@ -465,21 +465,24 @@ def cluster_routine(df, seq_col_name, uri_col_name, out_path, cutoff = 80,
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """Set Values"""
+import os
+cwd = os.getcwd() #get current working directory
+
 #name of the column containing sequences
-SeqCol = 'Sequences'
+SeqCol = 'seq.value'
 
 #name of the column contianing URIs/sequence names
-URICol = 'URI'
+URICol = 's.value'
 
 #cutoff for sequence similarity (e.g. only group sequences with a
 #similarity >= cutoff value)
 cutoff = 80
 
 #input file data path
-in_path = "C:\\Users\\JVM\\Downloads\\Sequences.csv"
+in_path = f'{cwd}\\Outputs\\iGEM_All.csv'
 
 #out file data path
-out_path = "C:\\Users\\JVM\\Downloads\\"
+out_path = f'{cwd}\\Outputs\\'
 
 #method of clustering to use
 # https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html#scipy.cluster.hierarchy.linkage )
@@ -487,9 +490,18 @@ method = 'complete' #farthest point clustering method
 
 """Run"""
 #import dataframe
-df = pd.read_csv(in_path)
+df_all = pd.read_csv(in_path)
 
+#Read in the minimum lengths to use for each part type
+role_names = pd.read_csv(f'{cwd}\\Min_Len\\Min_Len.csv', index_col = 0)
+#create a dictionary
+role_names = role_names.to_dict()
 
-cluster_routine(df, SeqCol, URICol, out_path, cutoff = cutoff,
-                    method=method)
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+for role_name in role_names['Role_Name'].values():
+    df = df_all[df_all['Role_Name']== role_name]
+    
+    cluster_routine(df, SeqCol, URICol,
+                    out_path = f'{out_path}{role_name}_',
+                    cutoff = cutoff, method=method)
 
