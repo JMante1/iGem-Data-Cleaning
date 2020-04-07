@@ -340,7 +340,7 @@ def dendoclust(clustered_series, distance_matrix, URIs,
     labels = URIs[clustered_ind].reset_index(drop=True).values
     
     #Create the figure
-    plt.figure(figsize=(30,30))
+    plt.figure(figsize=(90,30))
     dendo = cluster.hierarchy.dendrogram(
             linkage_array,
             color_threshold = 100-cutoff, #will color clusters individually below the threshold
@@ -497,11 +497,33 @@ role_names = pd.read_csv(f'{cwd}\\Min_Len\\Min_Len.csv', index_col = 0)
 #create a dictionary
 role_names = role_names.to_dict()
 
+df_all1 = df_all[df_all['U_Basic_Min_Len'] == True]
+
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-for role_name in role_names['Role_Name'].values():
-    df = df_all[df_all['Role_Name']== role_name]
-    
-    cluster_routine(df, SeqCol, URICol,
-                    out_path = f'{out_path}{role_name}_',
-                    cutoff = cutoff, method=method)
+"""
+
+ 'http://identifiers.org/so/SO:0000340': 'Chromosome',
+ 'http://identifiers.org/so/SO:0000316': 'CDS',
+ 'http://identifiers.org/so/SO:0000110': 'Sequence feature',
+  'http://identifiers.org/so/SO:0000804': 'Engineered Region',
+   'http://identifiers.org/so/SO:0000167': 'Promoter',
+
+"""
+
+
+role_name = 'Primer'
+df = df_all1[df_all1['Role_Name']== role_name]
+
+cluster_routine(df, SeqCol, URICol,
+                out_path = f'{out_path}_BasicUnique_{role_name}_',
+                cutoff = cutoff, method=method)
+
+
+
+#for role_name in role_names['Role_Name'].values():
+#    df = df_all[df_all['Role_Name']== role_name]
+#    
+#    cluster_routine(df, SeqCol, URICol,
+#                    out_path = f'{out_path}{role_name}_',
+#                    cutoff = cutoff, method=method)
 

@@ -206,7 +206,8 @@ edges = [*range(0,70000,10)] #making sure bins are only 10 wide
 for role in table.index:
     #select only rows with the role specified
     fltr_temp = df_all[df_all['Role_Name']==role]
-
+    
+    
     #select only rows where column value is true
     fltr_temp = fltr_temp[fltr_temp[Col_Name]]
     
@@ -221,7 +222,7 @@ for role in table.index:
     #Make histogram pretty
     axes = plt.gca()
     axes.set_yscale('log')
-#    axes.set_xscale('log')
+    axes.set_xscale('log')
     plt.xlabel('Sequence Length')
     plt.ylabel('Number of Occurrences')
     plt.title(f'{role}: {Col_Name}')
