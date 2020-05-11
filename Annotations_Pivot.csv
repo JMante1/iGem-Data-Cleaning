@@ -1,0 +1,10 @@
+,,Number_of_Annotations,Seq_len,Seq_len,Seq_len
+,,count,max,mean,min
+non_interested_role_parts_present,Number_of_Annotations,,,,
+False,0,62,1006.0,351.6290322580645,100.0
+False,1,36,721.0,234.05555555555554,101.0
+False,2,21,203.0,137.61904761904762,129.0
+True,1,15,635.0,278.0,129.0
+True,2,4,3388.0,1396.5,154.0
+True,3,1,368.0,368.0,368.0
+True,5,1,1178.0,1178.0,1178.0

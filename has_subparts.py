@@ -117,12 +117,27 @@ Created on Mon Apr 20 11:19:22 2020
 #    
 #    with open(out_file, 'w') as f:
 #            f.write(content)
-           
+
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+role_dict = {'0005836':'regulatory_region', '0000551':'polyA_signal_sequence',
+ '0000316':'CDS', '0000167':'promoter', '0000553':'polyA_site', 
+ '0005850':'primer_binding_site', '0000139':'ribosome_entry_site',
+ '0000110':'sequence_feature', '0000296':'origin_of_replication'}
+
+
+
+
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#FURTHER SEQUENCE ANNOTATION PULLOUT???
+
+
 import os
 cwd = os.getcwd()
 import glob
 
+role_looking_for = '0000141'
 in_location = os.path.join(cwd, "subpartcheck", "SBOL", "")
 
 in_files = glob.glob(f'{in_location}*.xml')
@@ -140,11 +155,21 @@ import pandas as pd
 Config.setOption('sbol_compliant_uris', True)
 Config.setOption('sbol_typed_uris', False)
 
+sequence_code = "[rdflib.term.URIRef('http://identifiers.org/so/SO:0002206')]"
+
 file_names = in_files
 
 annotations_df = []
 
+#file_names = in_files[0:5]
+
+
+
 for file_name in file_names:
+    
+    Non_interested_role = False
+    role_name = []
+    
     part_name = os.path.split(file_name)[1]
     
     doc = Document()
@@ -154,26 +179,54 @@ for file_name in file_names:
     #print(doc)
     
     annotations = []
+    annotation_roles = []
     
     for compdef in doc.componentDefinitions:
 #        print(compdef)
         for annotation in compdef.sequenceAnnotations:
-            split = os.path.split(str(annotation))[1]
-            annotations.append(split)
+            if str(annotation._roles) != sequence_code:
+#                print(str(annotation._roles))
+                split = os.path.split(str(annotation))[1]
+                annotations.append(split)
+                
+                role = str(annotation._roles)[50:-3]
+                
+                annotation_roles.append(role)
+                
+                if role != role_looking_for:
+                    Non_interested_role = True
+                    role_name.append(role_dict[role])
+
+                    
+    num_anno = len(annotations)            
+                
+                
+    
+    for sequence in doc.sequences:
+        seq_len = len(str(sequence._elements)[22:-3])
             
-    num_anno = len(annotations)
+
             
-    annotations_df.append([part_name, annotations, num_anno])
+    annotations_df.append([part_name, annotations, annotation_roles,
+                           num_anno, Non_interested_role, seq_len, role_name])
 
 
 
 
-annotations_df = pd.DataFrame(annotations_df, columns = ["Name", "annotations", "Number_of_Annotations"]) 
+annotations_df = pd.DataFrame(annotations_df, columns = ["Name", 
+                        "annotations","roles", "Number_of_Annotations",
+                        "non_interested_role_parts_present", "Seq_len", "role_name"]) 
 
-pivot = pd.pivot_table(annotations_df, index=['Number_of_Annotations'], aggfunc={
-            'Number_of_Annotations':['count']})
+annotations_df.to_csv(os.path.join(cwd,"Annotations.csv"))
+    
+pivot = pd.pivot_table(annotations_df, index=["non_interested_role_parts_present",
+            'Number_of_Annotations'], aggfunc={
+            'Number_of_Annotations':['count'], "Seq_len":['max','min','mean']})
+
+pivot.to_csv(os.path.join(cwd,"Annotations_Pivot.csv"))
     
 print(pivot)
+
 
 
 
