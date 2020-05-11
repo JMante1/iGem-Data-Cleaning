@@ -1,0 +1,25 @@
+LOCUS       Exported                 400 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 400)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..400
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 gttaattcaa attaattgat atagtttttt aatgagtatt gaatctgttt agaaataatg
+       61 gaatattatt tttatttatt tatttatatt attggtcggc tcttttcttc tgaaggtcaa
+      121 tgacaaaatg atatgaagga aataatgatt tctaaaattt tacaacgtaa gatattttta
+      181 caaaagccta gctcatcttt tgtcatgcac tattttactc acgcttgaaa ttaacggcca
+      241 gtccactgcg gagtcatttc aaagtcatcc taatcgatct atcgtttttg atagctcatt
+      301 ttggagttcg cgattgtctt ctgttattca caactgtttt aatttttatt tcattctgga
+      361 actcttcgag ttctttgtaa agtctttcat agtagcttac
+//

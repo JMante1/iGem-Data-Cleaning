@@ -1,0 +1,25 @@
+LOCUS       Exported                 123 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 123)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..123
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      12..83
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+ORIGIN
+        1 cttccaggca tcaaataaaa cgaaaggctc agtcgaaaga ctgggccttt cgttttatct
+       61 gttgtttgtc ggtgaacgct ctctactaga gtcacactgg ctcaccttcg ggtgggcctt
+      121 tct
+//

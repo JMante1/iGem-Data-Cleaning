@@ -1,0 +1,35 @@
+LOCUS       Exported                 990 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 990)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..990
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 attccgatgc ggttttcaag gataacagat ggcaaaattg ggatatcgtc ccacgggctg
+       61 gtgaaaacca gcatcgtgag gattaatggt ggacaattct ctttatccct ctacccggtg
+      121 taatctagag tgtccatacc agttgtcaat aagtttccaa caagccagtg ccgttgtagt
+      181 tgagtatttg cagtatagtc aaccatagtc gtagccagta atgtttacgt acaatatcta
+      241 cagaaaaatg aaataatttc cacctcgtaa attagcacac cgtgacgaaa tcccaagaac
+      301 gtggcaacct agacaggcac taaaacccgt actacattac aattcaaccc cgctccaaca
+      361 acttcttctc cctcttttct ccggtggggg agggaaagag aggagggagg ggggaaagtt
+      421 cgagatctgg caattcgacc ctcggattgg tttcccggtt ccgaatacgg ccggctttcc
+      481 cattccactt tgctttcctt gcttgctgcg tgctgcgtgc tgctgtgttg catgcagcta
+      541 gccttaatga gactacctat ctttaatgta gagtagtatg agcagggaaa gcctttattt
+      601 caactttctt tcttccttga ttttggttga taatatagat ctgcaccatg atatagtatt
+      661 atagaatgga tagatgaatg aatggatgaa tggtatgtat acgtaagtac ctcgaaagtt
+      721 agttaagtaa aaagtgaggg gtaagttgag agccagccaa ggctgggggg ctaaaatatg
+      781 atgtgatcgg atcacgagta tatgtcgtag ttgttgtgtg tttttgtgta ggattggatt
+      841 ggattggatt gggttgagtt agtggcattg ccgacatagc cattcaatga gtcgaggaat
+      901 gaactggttt cccgcgccag taaataactt actttagctg tggtggtagt aagtaagata
+      961 taaccggttt taaagttatc cggggtcatg
+//

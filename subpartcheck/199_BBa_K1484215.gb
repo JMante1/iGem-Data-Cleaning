@@ -1,0 +1,26 @@
+LOCUS       Exported                 293 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 293)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..293
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      22..274
+                     /label=NOS terminator
+                     /note="nopaline synthase terminator and poly(A) signal"
+ORIGIN
+        1 ggtctcaggt agaatttccc cgatcgttca aacatttggc aataaagttt cttaagattg
+       61 aatcctgttg ccggtcttgc gatgattatc atataatttc tgttgaatta cgttaagcat
+      121 gtaataatta acatgtaatg catgacgtta tttatgagat gggtttttat gattagagtc
+      181 ccgcaattat acatttaata cgcgatagaa aacaaaatat agcgcgcaaa ctaggataaa
+      241 ttatcgcgcg cggtgtcatc tatgttacta gatcggcaat tccgctagag acc
+//

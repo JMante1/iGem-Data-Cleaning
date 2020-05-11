@@ -1,0 +1,33 @@
+LOCUS       Exported                 154 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 154)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..154
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     CDS             42..74
+                     /codon_start=1
+                     /product="C-terminal peptide that mediates degradation in 
+                     bacteria through the ClpXP and ClpAP proteases (McGinness 
+                     et al., 2006)"
+                     /label=ssrA tag (LVA)
+                     /note="mutant LVA variant that confers accelerated 
+                     degradation under some conditions (Andersen et al., 1998)"
+                     /translation="AANDENYALVA"
+     terminator      121..148
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+ORIGIN
+        1 tgcagctggc acgacaggtt tcccgactgg aaagcgggca ggctgcaaac gacgaaaact
+       61 acgctttagt agcttaataa ctctgatagt gctagtgtag atctctacta gagtcacact
+      121 ggctcacctt cgggtgggcc tttctgcgtt tata
+//

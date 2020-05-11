@@ -1,0 +1,28 @@
+LOCUS       Exported                 169 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 169)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..169
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      26..97
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+     terminator      113..140
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+ORIGIN
+        1 gaattcggtc tctagaccca ggcatcaaat aaaacgaaag gctcagtcga aagactgggc
+       61 ctttcgtttt atctgttgtt tgtcggtgaa cgctctctac tagagtcaca ctggctcacc
+      121 ttcgggtggg cctttctgcg tttatatact agtagcggga gaccctgca
+//

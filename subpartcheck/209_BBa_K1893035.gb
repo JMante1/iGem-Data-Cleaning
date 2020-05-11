@@ -1,0 +1,39 @@
+LOCUS       Exported                 368 bp ds-DNA     linear   UNA 06-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 368)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 6, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..368
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     CDS             14..43
+                     /codon_start=1
+                     /product="Myc (human c-Myc proto-oncogene) epitope tag"
+                     /label=Myc
+                     /translation="EQKLISEEDL"
+     CDS             59..76
+                     /codon_start=1
+                     /product="6xHis affinity tag"
+                     /label=6xHis
+                     /translation="HHHHHH"
+     terminator      302..348
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+ORIGIN
+        1 gaagcttggg cccgaacaaa aactcatctc agaagaggat ctgaatagcg ccgtcgacca
+       61 tcatcatcat catcattgag tttaaacggt ctccagcttg gctgttttgg cggatgagag
+      121 aagattttca gcctgataca gattaaatca gaacgcagaa gcggtctgat aaaacagaat
+      181 ttgcctggcg gcagtagcgc ggtggtccca cctgacccca tgccgaactc agaagtgaaa
+      241 cgccgtagcg ccgatggtag tgtggggtct ccccatgcga gagtagggaa ctgccaggca
+      301 tcaaataaaa cgaaaggctc agtcgaaaga ctgggccttt cgttttatct gttgtttgtc
+      361 ggtgaact
+//
