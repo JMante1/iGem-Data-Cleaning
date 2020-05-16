@@ -185,7 +185,8 @@ for file_name in file_names:
 #        print(compdef)
         for annotation in compdef.sequenceAnnotations:
             if str(annotation._roles) != sequence_code:
-#                print(str(annotation._roles))
+                for loc in annotation.locations:
+                    print(loc.start)
                 split = os.path.split(str(annotation))[1]
                 annotations.append(split)
                 
@@ -223,13 +224,14 @@ pivot = pd.pivot_table(annotations_df, index=["non_interested_role_parts_present
             'Number_of_Annotations'], aggfunc={
             'Number_of_Annotations':['count'], "Seq_len":['max','min','mean']})
 
-pivot.to_csv(os.path.join(cwd,"Annotations_Pivot.csv"))
+pivot.to_csv(os.path.join(cwd,"Annotations_Pivot.csv")) #comment
     
 print(pivot)
 
+#annotation names and percentage of sequence, look at all basic terminators
 
 
-
+##############################################################################################
 
 
 
