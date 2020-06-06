@@ -1,0 +1,27 @@
+LOCUS       Exported                 256 bp ds-DNA     linear   UNA 04-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 256)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 4, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..256
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      4..256
+                     /label=NOS terminator
+                     /note="nopaline synthase terminator and poly(A) signal"
+ORIGIN
+        1 tgagatcgtt caaacatttg gcaataaagt ttcttaagat tgaatcctgt tgccggtctt
+       61 gcgatgatta tcatataatt tctgttgaat tacgttaagc atgtaataat taacatgtaa
+      121 tgcatgacgt tatttatgag atgggttttt atgattagag tcccgcaatt atacatttaa
+      181 tacgcgatag aaaacaaaat atagcgcgca aactaggata aattatcgcg cgcggtgtca
+      241 tctatgttac tagatc
+//
+

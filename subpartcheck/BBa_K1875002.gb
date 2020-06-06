@@ -1,0 +1,31 @@
+LOCUS       Exported                 536 bp ds-DNA     linear   UNA 04-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 536)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 4, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..536
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     polyA_site      143..198
+                     /label=-beta-globin poly(A) signal
+                     /note="rabbit beta-globin polyadenylation signal"
+ORIGIN
+        1 actcctcagg tgcaggctgc ctatcagaag gtggtggctg gtgtggccaa tgccctggct
+       61 cacaaatacc actgagatct ttttccctct gccaaaaatt atggggacat catgaagccc
+      121 cttgagcatc tgacttctgg ctaataaagg aaatttattt tcattgcaat agtgtgttgg
+      181 aattttttgt gtctctcact cggaaggaca tatgggaggg caaatcattt aaaacatcag
+      241 aatgagtatt tggtttagag tttggcaaca tatgcccata tgctggctgc catgaacaaa
+      301 ggttggctat aaagaggtca tcagtatatg aaacagcccc ctgctgtcca ttccttattc
+      361 catagaaaag ccttgacttg aggttagatt ttttttatat tttgttttgt gttatttttt
+      421 tctttaacat ccctaaaatt ttccttacat gttttactag ccagattttt cctcctctcc
+      481 tgactactcc cagtcatagc tgtccctctt ctcttatgga gatccctcga cctgca
+//
+

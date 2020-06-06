@@ -1,0 +1,27 @@
+LOCUS       Exported                 180 bp ds-DNA     linear   UNA 04-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 180)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 4, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..180
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      1..166
+                     /gene="S. cerevisiae ADH1"
+                     /label=ADH1 terminator
+                     /note="transcription terminator for the S. cerevisiae 
+                     alcohol dehydrogenase 1 (ADH1) gene"
+ORIGIN
+        1 gcgaatttct tatgatttat gatttttatt attaaataag ttataaaaaa aataagtgta
+       61 tacaaatttt aaagtgactc ttaggtttta aaacgaaaat tcttattctt gagtaactct
+      121 ttcctgtagg tcaggttgct ttctcaggta tagcatgagg tcgctcttat tgaccacacc
+//
+

@@ -1,0 +1,24 @@
+LOCUS       Exported                 103 bp ds-DNA     linear   UNA 04-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 103)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 4, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..103
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      5..99
+                     /label=lambda t0 terminator
+                     /note="transcription terminator from phage lambda"
+ORIGIN
+        1 cttggactcc tgttgataga tccagtaatg acctcagaac tccatctgga tttgttcaga
+       61 acgctcggtt gccgccgggc gttttttatt ggtgagaatc cag
+//
+

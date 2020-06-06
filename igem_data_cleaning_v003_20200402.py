@@ -9,7 +9,7 @@ import requests
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from pandas.io.json import json_normalize
+from pandas import json_normalize
 import os
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,7 +119,10 @@ df_all['Max_Len_Param'] = df_all['role1.value'].map(dict_min_len['Max_Len'])
 
 #add a column with the common role name for each row
 df_all['Role_Name'] = df_all['role1.value'].map(dict_min_len['Role_Name'])
-    
+
+dict_boolean = {"true":True, "false":False}
+#ensure the column contains booleans not strings
+df_all['discontinued.value'] = df_all['discontinued.value'].map(dict_boolean)    
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #drop unnecessar columns
 df_all = df_all.drop(columns=['descript.datatype', 'descript.type',
@@ -192,7 +195,10 @@ table = pd.pivot_table(df_all, index=['Role_Name'], aggfunc={
             'U_Basic_Min_Len':['sum'],
             'U_Composite_Min_Len':['sum'],
             'U_Basic_Or_Comp_Role_Equal':['sum'],
-            'U_Comp_Role_Equal':['sum']
+            'U_Comp_Role_Equal':['sum'],
+            'discontinued.value':['sum'],
+            'Equal':['sum'],
+            'U_total':['sum']
                        })
 
 if pivot_out:

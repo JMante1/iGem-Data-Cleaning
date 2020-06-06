@@ -1,0 +1,26 @@
+LOCUS       Exported                 233 bp ds-DNA     linear   UNA 04-MAY-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 233)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported May 4, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..233
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     polyA_signal    9..233
+                     /label=bGH poly(A) signal
+                     /note="bovine growth hormone polyadenylation signal"
+ORIGIN
+        1 attccgatct gtgccttcta gttgccagcc atctgttgtt tgcccctccc ccgtgccttc
+       61 cttgaccctg gaaggtgcca ctcccactgt cctttcctaa taaaatgagg aaattgcatc
+      121 gcattgtctg agtaggtgtc attctattct ggggggtggg gtggggcagg acagcaaggg
+      181 ggaggattgg gaagacaata gcaggcatgc tggggatgcg gtgggctcta tgg
+//
+
