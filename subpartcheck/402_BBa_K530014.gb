@@ -1,0 +1,22 @@
+LOCUS       Exported                 221 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 221)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..221
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 aaaatagacg gcttctacta tcatcattac agtaagggtt gaagtcagga aaggttaaaa
+       61 ataaaataaa tatcaaaaag tttttagcgg aaggcgttaa ggcagcaagt acacattcat
+      121 ttatctatct atacatctat aaacacaact acaatttttt tagaaatgga atttattata
+      181 tgaagggaag acatatagag gcaacagtac ataaaggtaa g
+//

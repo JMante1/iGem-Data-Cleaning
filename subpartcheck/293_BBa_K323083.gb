@@ -1,0 +1,29 @@
+LOCUS       Exported                  69 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 69)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..69
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     CDS             1..18
+                     /codon_start=1
+                     /product="6xHis affinity tag"
+                     /label=6xHis
+                     /translation="HHHHHH"
+     terminator      22..69
+                     /label=T7 terminator
+                     /note="transcription terminator for bacteriophage T7 RNA 
+                     polymerase"
+ORIGIN
+        1 catcaccatc accatcacta actagcataa ccccttgggg cctctaaacg ggtcttgagg
+       61 ggttttttg
+//

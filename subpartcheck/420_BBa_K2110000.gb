@@ -1,0 +1,27 @@
+LOCUS       Exported                 248 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 248)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..248
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      2..248
+                     /gene="S. cerevisiae CYC1"
+                     /label=CYC1 terminator
+                     /note="transcription terminator for CYC1"
+ORIGIN
+        1 gcaaattaaa gccttcgagc gtcccaaaac cttctcaagc aaggttttca gtataatgtt
+       61 acatgcgtac acgcgtctgt acagaaaaaa aagaaaaatt tgaaatataa ataacgttct
+      121 taatactaac ataactataa aaaaataaat agggacctag acttcaggtt gtctaactcc
+      181 ttccttttcg gttagagcgg atgtgggggg agggcgtgaa tgtaagcgtg acataactaa
+      241 ttacatga
+//

@@ -1,0 +1,75 @@
+LOCUS       Exported                1089 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 1089)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1089
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     protein_bind    101..122
+                     /label=CAP binding site
+                     /bound_moiety="E. coli catabolite activator protein"
+                     /note="CAP binding activates transcription in the presence 
+                     of cAMP."
+     promoter        137..167
+                     /label=lac promoter
+                     /note="promoter for the E. coli lac operon"
+     protein_bind    175..191
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     RBS             209..220
+                     /note="strong bacterial ribosome binding site (Elowitz and 
+                     Leibler, 2000)"
+     RBS             229..240
+                     /note="strong bacterial ribosome binding site (Elowitz and 
+                     Leibler, 2000)"
+     CDS             247..924
+                     /codon_start=1
+                     /product="monomeric derivative of DsRed (Campbell et al., 
+                     2002)"
+                     /label=mRFP1
+                     /translation="MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAK
+                     LKVTKGGPLPFAWDILSPQFQYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGV
+                     VTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASTERMYPEDGALKGEIKM
+                     RLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHS
+                     TGA"
+     terminator      969..1040
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+     terminator      1056..1083
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+ORIGIN
+        1 caatacgcaa accgcctctc cccgcgcgtt ggccgattca ttaatgcagc tggcacgaca
+       61 ggtttcccga ctggaaagcg ggcagtgagc gcaacgcaat taatgtgagt tagctcactc
+      121 attaggcacc ccaggcttta cactttatgc ttccggctcg tatgttgtgt ggaattgtga
+      181 gcggataaca atttcacaca tactagagaa agaggagaaa tactagagaa agaggagaaa
+      241 tactagatgg cttcctccga agacgttatc aaagagttca tgcgtttcaa agttcgtatg
+      301 gaaggttccg ttaacggtca cgagttcgaa atcgaaggtg aaggtgaagg tcgtccgtac
+      361 gaaggtaccc agaccgctaa actgaaagtt accaaaggtg gtccgctgcc gttcgcttgg
+      421 gacatcctgt ccccgcagtt ccagtacggt tccaaagctt acgttaaaca cccggctgac
+      481 atcccggact acctgaaact gtccttcccg gaaggtttca aatgggaacg tgttatgaac
+      541 ttcgaagacg gtggtgttgt taccgttacc caggactcct ccctgcaaga cggtgagttc
+      601 atctacaaag ttaaactgcg tggtaccaac ttcccgtccg acggtccggt tatgcagaaa
+      661 aaaaccatgg gttgggaagc ttccaccgaa cgtatgtacc cggaagacgg tgctctgaaa
+      721 ggtgaaatca aaatgcgtct gaaactgaaa gacggtggtc actacgacgc tgaagttaaa
+      781 accacctaca tggctaaaaa accggttcag ctgccgggtg cttacaaaac cgacatcaaa
+      841 ctggacatca cctcccacaa cgaagactac accatcgttg aacagtacga acgtgctgaa
+      901 ggtcgtcact ccaccggtgc ttaataacgc tgatagtgct agtgtagatc gctactagag
+      961 ccaggcatca aataaaacga aaggctcagt cgaaagactg ggcctttcgt tttatctgtt
+     1021 gtttgtcggt gaacgctctc tactagagtc acactggctc accttcgggt gggcctttct
+     1081 gcgtttata
+//

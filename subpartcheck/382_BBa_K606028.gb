@@ -1,0 +1,25 @@
+LOCUS       Exported                 153 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 153)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..153
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      71..118
+                     /label=T7 terminator
+                     /note="transcription terminator for bacteriophage T7 RNA 
+                     polymerase"
+ORIGIN
+        1 tggccggcta gtgactgcta acaaagcccg aaaggaagct gagttggctg ctgccaccgc
+       61 tgagcaataa ctagcataac cccttggggc ctctaaacgg gtcttgaggg gttttttgct
+      121 gaaaggagga actatatccg gataccgggt taa
+//

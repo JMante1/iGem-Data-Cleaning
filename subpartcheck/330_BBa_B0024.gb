@@ -1,0 +1,23 @@
+LOCUS       Exported                  95 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 95)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..95
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      61..88
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+ORIGIN
+        1 aaataataaa aaagccggat taataatctg gctttttata ttctctctct agtatataaa
+       61 cgcagaaagg cccacccgaa ggtgagccag tgtga
+//

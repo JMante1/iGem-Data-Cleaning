@@ -1,0 +1,21 @@
+LOCUS       Exported                 165 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 165)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..165
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 ctttcaagaa aagttttcat tgatccttct ttctcattcc ttcatttaat gttcgtttta
+       61 tcttcattgt tttacgagga tttttctgct tcagcagttc cttgttcact aagtataccc
+      121 atatataccc gcctatatac cccaattttt ttatacagta acgaa
+//

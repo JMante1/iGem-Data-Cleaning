@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gbConv="http://sbols.org/genBankConversion#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+  <sbol:ComponentDefinition rdf:about="trial/Exported">
+    <sbol:persistentIdentity rdf:resource="trial/Exported"/>
+    <sbol:displayId>Exported</sbol:displayId>
+    <dcterms:description>natural linear DNA</dcterms:description>
+    <genbank:locus>Exported</genbank:locus>
+    <genbank:molecule>ds-DNA</genbank:molecule>
+    <genbank:division>UNA</genbank:division>
+    <genbank:date>28-JUN-2020</genbank:date>
+    <genbank:keywords>.</genbank:keywords>
+    <genbank:source>natural DNA sequence</genbank:source>
+    <genbank:organism>unspecified</genbank:organism>
+    <genbank:reference>
+      <genbank:Reference rdf:about="trial/Exported/reference0">
+        <genbank:label>1  (bases 1 to 1178)</genbank:label>
+        <genbank:authors>.</genbank:authors>
+        <genbank:title>Direct Submission</genbank:title>
+        <genbank:journal>Exported Jun 28, 2020 from SnapGene Server 2.0.9 http://www.snapgene.com</genbank:journal>
+      </genbank:Reference>
+    </genbank:reference>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation1">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation1"/>
+        <sbol:displayId>annotation1</sbol:displayId>
+        <dcterms:title>M13 rev</dcterms:title>
+        <gbConv:label>M13 rev</gbConv:label>
+        <gbConv:note>common sequencing primer, one of multiple similar variants</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0005850"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation1/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation1/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>18</sbol:start>
+            <sbol:end>34</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation0">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation0"/>
+        <sbol:displayId>annotation0</sbol:displayId>
+        <dcterms:title>unspecified</dcterms:title>
+        <gbConv:organism>unspecified</gbConv:organism>
+        <gbConv:mol_type>genomic DNA</gbConv:mol_type>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0002206"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation0/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation0/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1</sbol:start>
+            <sbol:end>1178</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation4">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation4"/>
+        <sbol:displayId>annotation4</sbol:displayId>
+        <dcterms:title>CAP binding site</dcterms:title>
+        <gbConv:featureType>protein_bind</gbConv:featureType>
+        <gbConv:label>CAP binding site</gbConv:label>
+        <gbConv:bound_moiety>E. coli catabolite activator protein</gbConv:bound_moiety>
+        <gbConv:note>CAP binding activates transcription in the presence of cAMP.</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation4/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation4/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>111</sbol:start>
+            <sbol:end>132</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation2">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation2"/>
+        <sbol:displayId>annotation2</sbol:displayId>
+        <dcterms:title>lac operator</dcterms:title>
+        <gbConv:featureType>protein_bind</gbConv:featureType>
+        <gbConv:label>lac operator</gbConv:label>
+        <gbConv:bound_moiety>lac repressor encoded by lacI</gbConv:bound_moiety>
+        <gbConv:note>The lac repressor binds to the lac operator to inhibit transcription in E. coli. This inhibition can be relieved by adding lactose or isopropyl-beta-D-thiogalactopyranoside (IPTG).</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000110"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation2/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation2/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>42</sbol:start>
+            <sbol:end>58</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation3">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation3"/>
+        <sbol:displayId>annotation3</sbol:displayId>
+        <dcterms:title>lac promoter</dcterms:title>
+        <gbConv:label>lac promoter</gbConv:label>
+        <gbConv:note>promoter for the E. coli lac operon</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation3/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation3/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>66</sbol:start>
+            <sbol:end>96</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation5">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation5"/>
+        <sbol:displayId>annotation5</sbol:displayId>
+        <dcterms:title>ori</dcterms:title>
+        <gbConv:direction>LEFT</gbConv:direction>
+        <gbConv:label>ori</gbConv:label>
+        <gbConv:note>high-copy-number ColE1/pMB1/pBR322/pUC origin of replication</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000296"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation5/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation5/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>420</sbol:start>
+            <sbol:end>1008</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="trial/Exported_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="trial/Exported_seq">
+    <sbol:persistentIdentity rdf:resource="trial/Exported_seq"/>
+    <sbol:displayId>Exported_seq</sbol:displayId>
+    <sbol:elements>ctcgaattcgtaatcatgtcatagctgtttcctgtgtgaaattgttatccgctcacaattccacacaacatacgagccggaagcataaagtgtaaagcctggggtgcctaatgagtgagctaactcacattaattgcgttgcgctcactgcccgctttccagtcgggaaacctgtcgtgccagctgcattaatgaatcggccaacgcgcggggagaggcggtttgcgtattgggcgctcttccgcttcctcgctcactgactcgctgcgctcggtcgttcggctgcggcgagcggtatcagctcactcaaaggcggtaatacggttatccacagaatcaggggataacgcaggaaagaacatgtgagcaaaaggccagcaaaaggccaggaaccgtaaaaaggccgcgttgctggcgtttttccataggctccgcccccctgacgagcatcacaaaaatcgacgctcaagtcagaggtggcgaaacccgacaggactataaagataccaggcgtttccccctggaagctccctcgtgcgctctcctgttccgaccctgccgcttaccggatacctgtccgcctttctcccttcgggaagcgtggcgctttctcatagctcacgctgtaggtatctcagttcggtgtaggtcgttcgctccaagctgggctgtgtgcacgaaccccccgttcagcccgaccgctgcgccttatccggtaactatcgtcttgagtccaacccggtaagacacgacttatcgccactggcagcagccactggtaacaggattagcagagcgaggtatgtaggcggtgctacagagttcttgaagtggtggcctaactacggctacactagaaggacagtatttggtatctgcgctctgctgaagccagttaccttcggaaaaagagttggtagctcttgatccggcaaacaaaccaccgctggtagcggtggtttttttgtttgcaagcagcagattacgcgcagaaaaaaaggatctcaagaagatcctttgatcttttctacggggtctgacgctcagtggaacgaaaactcacgttaagggattttggtcatgagattatcaaaaaggatcttcacctagatccttttaaattaaaaatgaagttttaaatcaatctaaagtatatatgagtaaacttggtctgacag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+</rdf:RDF>

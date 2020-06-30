@@ -1,0 +1,27 @@
+LOCUS       Exported                 507 bp ds-DNA     linear   UNA 28-JUN-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 507)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jun 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..507
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 ggagattgat aagacttttc tagttgcata tcttttatat ttaaatctta tctattagtt
+       61 aattttttgt aatttatcct tatatatagt ctggttattc taaaatatca tttcagtatc
+      121 taaaaattcc cctctttttt cagttatatc ttaacaggcg acagtccaaa tgttgattta
+      181 tcccagtccg attcatcagg gttgtgaagc attttgtcaa tggtcgaaat cacatcagta
+      241 atagtgcctc ttacttgcct catagaattt ctttctctta acgtcaccgt ttgtctttta
+      301 tagtttcgaa atctatggtg ataccaaatg gtgttcccaa ttcatcgtta cgggcgtatt
+      361 ttttaccaat tgaagtattg gaatcgtcaa ttttaaagta tatctctctt ttacgtaaag
+      421 cctgcgagat cctcttaagt atagcgggga agccatcgtt attcgatatt gtcgtaacaa
+      481 atactttgag cggcgctatc tgtaatg
+//
