@@ -1,0 +1,39 @@
+LOCUS       Exported                 431 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 431)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..431
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     terminator      8..35
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+     terminator      207..234
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+     terminator      311..382
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+     terminator      398..425
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+ORIGIN
+        1 tcacactggc tcaccttcgg gtgggccttt ctgcgtttat atactagaga gagaatataa
+       61 aaagccagat tattaatccg gcttttttat tattttacta gagcgccaaa aaccccgccc
+      121 ctgacagggc ggggtttttc cgctactaga gcgcaaaaaa ccccgcccct gacagggcgg
+      181 ggttttttcg ctactagagt cacactggct caccttcggg tgggcctttc tgcgtttata
+      241 tactagagag agaatataaa aagccagatt attaatccgg cttttttatt attttactag
+      301 agccaggcat caaataaaac gaaaggctca gtcgaaagac tgggcctttc gttttatctg
+      361 ttgtttgtcg gtgaacgctc tctactagag tcacactggc tcaccttcgg gtgggccttt
+      421 ctgcgtttat a
+//

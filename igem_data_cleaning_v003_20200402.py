@@ -94,14 +94,17 @@ for query in queries:
     f_open.close()
 
 #Run each of the three queries
-subparts = sparqling(query_texts[0], is_basic=False, progress = progress)
+#subparts = sparqling(query_texts[0], is_basic=False, progress = progress)
 no_subparts = sparqling(query_texts[1], progress = progress)
-no_sequence = sparqling(query_texts[2], no_sequence = True, progress = progress)
+#no_sequence = sparqling(query_texts[2], no_sequence = True, progress = progress)
 
 #Create one pandas dataframe with all of the information
-df_all = pd.concat([subparts, no_subparts, no_sequence],sort=True)
+# df_all = pd.concat([subparts, no_subparts, no_sequence],sort=True)
+df_all = no_subparts
 
 #Output sequences only
+df_all.to_csv(f'{cwd}\\Outputs\\iGemData.csv',index=False)
+
 if seq_out:
     sequences = df_all[['s.value','seq.value']]
     sequences.to_csv(f'{cwd}\\Outputs\\Sequences.csv',index=False)
@@ -197,12 +200,33 @@ table = pd.pivot_table(df_all, index=['Role_Name'], aggfunc={
             'U_Basic_Or_Comp_Role_Equal':['sum'],
             'U_Comp_Role_Equal':['sum'],
             'discontinued.value':['sum'],
-            'Equal':['sum'],
-            'U_total':['sum']
+            'Equal':['sum']
+                       })
+
+
+df_basic_unique=df_all[df_all['U_Basic_Min_Len']]
+
+table_basic = pd.pivot_table(df_basic_unique, index=['Role_Name'], aggfunc={
+            'seq.value':['nunique'],
+            'Seq_Len':['count','min', 'max', 'mean', 'std'],
+            'Over_Min_Len':['sum'],
+            'U_Over_Min_Len':['sum'],
+            'Min_Len_Param':['max'],
+            'U_Basic_Min_Len':['sum'],
+            'U_Composite_Min_Len':['sum'],
+            'U_Basic_Or_Comp_Role_Equal':['sum'],
+            'U_Comp_Role_Equal':['sum'],
+            'discontinued.value':['sum'],
+            'Equal':['sum']
                        })
 
 if pivot_out:
     table.to_csv(f'{cwd}\\Outputs\\Pivot.csv')
+    table_basic.to_csv(f'{cwd}\\Outputs\\Pivot_basic.csv')
+
+df_basic_unique2 = df_basic_unique[df_basic_unique['Role_Name'].isin(['CDS', 'Promoter', 'Terminator', 'Ribosome Entry Site'])]
+df_basic_unique2 = df_basic_unique2[['s.value','Role_Name']]
+df_basic_unique2.to_csv(f'{cwd}\\Outputs\\Basic_Unique_overMin_Reduced.csv')
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """Create Histograms of a column"""

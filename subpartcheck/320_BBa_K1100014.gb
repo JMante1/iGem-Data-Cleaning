@@ -1,0 +1,25 @@
+LOCUS       Exported                 106 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 106)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..106
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     protein_bind    1..15
+                     /label=Csy4 site
+                     /bound_moiety="Pseudomonas aeruginosa Csy4 (Cas6f)"
+                     /note="cleavage site for the Csy4 endoribonuclease 
+                     (Haurwitz et al., 2010)"
+ORIGIN
+        1 ctgccgtata ggcagctaag gagcagcaac gatgttacgc agcagggcag tcgccctaaa
+       61 acaaagttag gcagcacgga gacacttcag catgggtgga ggtagc
+//

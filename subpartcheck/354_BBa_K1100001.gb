@@ -1,0 +1,20 @@
+LOCUS       Exported                  87 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 87)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..87
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 ggagcagcaa cgatgttacg cagcagggca gtcgccctaa aacaaagtta ggcagcacgg
+       61 agacacttca gcatgggtgg aggtagc
+//

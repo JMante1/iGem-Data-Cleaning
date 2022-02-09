@@ -1,0 +1,21 @@
+LOCUS       Exported                 140 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 140)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..140
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+ORIGIN
+        1 tgcagtttag cgtgcggctg cagtttagcg tgactttctt tcaacagctt acaattgttg
+       61 ttactgccta atgtttttag ggtattttaa aaaagggcga taaaaaacga ttggaggatg
+      121 agacatgaac gctcaaaagc
+//

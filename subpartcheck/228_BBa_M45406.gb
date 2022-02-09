@@ -1,0 +1,23 @@
+LOCUS       Exported                  64 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 64)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..64
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     promoter        7..38
+                     /label=minP
+                     /note="minimal TATA-box promoter with low basal activity"
+ORIGIN
+        1 agacactaga gggtatataa tggaagctcg acttccagct tggcaatccg gtactgttgg
+       61 taaa
+//

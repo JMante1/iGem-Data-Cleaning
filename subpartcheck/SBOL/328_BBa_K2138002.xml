@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gbConv="http://sbols.org/genBankConversion#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:genbank="http://www.ncbi.nlm.nih.gov/genbank#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+  <sbol:ComponentDefinition rdf:about="trial/Exported">
+    <sbol:persistentIdentity rdf:resource="trial/Exported"/>
+    <sbol:displayId>Exported</sbol:displayId>
+    <dcterms:description>natural linear DNA</dcterms:description>
+    <genbank:locus>Exported</genbank:locus>
+    <genbank:molecule>ds-DNA</genbank:molecule>
+    <genbank:division>UNA</genbank:division>
+    <genbank:date>28-JUL-2020</genbank:date>
+    <genbank:keywords>.</genbank:keywords>
+    <genbank:source>natural DNA sequence</genbank:source>
+    <genbank:organism>unspecified</genbank:organism>
+    <genbank:reference>
+      <genbank:Reference rdf:about="trial/Exported/reference0">
+        <genbank:label>1  (bases 1 to 2175)</genbank:label>
+        <genbank:authors>.</genbank:authors>
+        <genbank:title>Direct Submission</genbank:title>
+        <genbank:journal>Exported Jul 28, 2020 from SnapGene Server 2.0.9 http://www.snapgene.com</genbank:journal>
+      </genbank:Reference>
+    </genbank:reference>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation8">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation8"/>
+        <sbol:displayId>annotation8</sbol:displayId>
+        <dcterms:title>BioBrick prefix</dcterms:title>
+        <gbConv:label>BioBrick prefix</gbConv:label>
+        <gbConv:note>BioBrick prefix for parts that do not start with ATG</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001411"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation8/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation8/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>2154</sbol:start>
+            <sbol:end>2175</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation5">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation5"/>
+        <sbol:displayId>annotation5</sbol:displayId>
+        <dcterms:title>lambda t0 terminator</dcterms:title>
+        <gbConv:label>lambda t0 terminator</gbConv:label>
+        <gbConv:note>transcription terminator from phage lambda</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation5/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation5/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1150</sbol:start>
+            <sbol:end>1244</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation1">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation1"/>
+        <sbol:displayId>annotation1</sbol:displayId>
+        <dcterms:title>BioBrick prefix</dcterms:title>
+        <gbConv:label>BioBrick prefix</gbConv:label>
+        <gbConv:note>BioBrick prefix for parts that do not start with ATG</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001411"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation1/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation1/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1</sbol:start>
+            <sbol:end>22</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation2">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation2"/>
+        <sbol:displayId>annotation2</sbol:displayId>
+        <dcterms:title>BioBrick suffix</dcterms:title>
+        <gbConv:label>BioBrick suffix</gbConv:label>
+        <gbConv:note>universal suffix for all parts</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0001411"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation2/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation2/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>106</sbol:start>
+            <sbol:end>126</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation6">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation6"/>
+        <sbol:displayId>annotation6</sbol:displayId>
+        <dcterms:title>CmR</dcterms:title>
+        <gbConv:codon_start>1</gbConv:codon_start>
+        <gbConv:gene>cat</gbConv:gene>
+        <gbConv:product>chloramphenicol acetyltransferase</gbConv:product>
+        <gbConv:label>CmR</gbConv:label>
+        <gbConv:note>confers resistance to chloramphenicol</gbConv:note>
+        <gbConv:translation>MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA</gbConv:translation>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation6/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation6/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1265</sbol:start>
+            <sbol:end>1924</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation3">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation3"/>
+        <sbol:displayId>annotation3</sbol:displayId>
+        <dcterms:title>his operon terminator</dcterms:title>
+        <gbConv:label>his operon terminator</gbConv:label>
+        <gbConv:note>This putative transcriptin terminator from the E. coli his operon has a 2-bp deletion introduced during synthesis. Its efficiency has not been determined.</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation3/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation3/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>127</sbol:start>
+            <sbol:end>184</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation4">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation4"/>
+        <sbol:displayId>annotation4</sbol:displayId>
+        <dcterms:title>ori</dcterms:title>
+        <gbConv:direction>LEFT</gbConv:direction>
+        <gbConv:label>ori</gbConv:label>
+        <gbConv:note>high-copy-number ColE1/pMB1/pBR322/pUC origin of replication</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000296"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation4/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation4/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>379</sbol:start>
+            <sbol:end>967</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation0">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation0"/>
+        <sbol:displayId>annotation0</sbol:displayId>
+        <dcterms:title>unspecified</dcterms:title>
+        <gbConv:organism>unspecified</gbConv:organism>
+        <gbConv:mol_type>genomic DNA</gbConv:mol_type>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0002206"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation0/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation0/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1</sbol:start>
+            <sbol:end>2175</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="trial/Exported/annotation7">
+        <sbol:persistentIdentity rdf:resource="trial/Exported/annotation7"/>
+        <sbol:displayId>annotation7</sbol:displayId>
+        <dcterms:title>bacterial terminator</dcterms:title>
+        <gbConv:label>bacterial terminator</gbConv:label>
+        <gbConv:note>putative bacterial transcription terminator</gbConv:note>
+        <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+        <sbol:location>
+          <sbol:Range rdf:about="trial/Exported/annotation7/range">
+            <sbol:persistentIdentity rdf:resource="trial/Exported/annotation7/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>2108</sbol:start>
+            <sbol:end>2151</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="trial/Exported_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="trial/Exported_seq">
+    <sbol:persistentIdentity rdf:resource="trial/Exported_seq"/>
+    <sbol:displayId>Exported_seq</sbol:displayId>
+    <sbol:elements>gaattcgcggccgcttctagaggttgacggctagctcagtcctaggtacagtgctagctatctattattcatatcatatatctatatcatcaaaagacaggaccctactagtagcggccgctgcagtccggcaaaaaagggcaaggtgtcaccaccctgccctttttctttaaaaccgaaaagattacttcgcgttatgcaggcttcctcgctcactgactcgctgcgctcggtcgttcggctgcggcgagcggtatcagctcactcaaaggcggtaatacggttatccacagaatcaggggataacgcaggaaagaacatgtgagcaaaaggccagcaaaaggccaggaaccgtaaaaaggccgcgttgctggcgtttttccacaggctccgcccccctgacgagcatcacaaaaatcgacgctcaagtcagaggtggcgaaacccgacaggactataaagataccaggcgtttccccctggaagctccctcgtgcgctctcctgttccgaccctgccgcttaccggatacctgtccgcctttctcccttcgggaagcgtggcgctttctcatagctcacgctgtaggtatctcagttcggtgtaggtcgttcgctccaagctgggctgtgtgcacgaaccccccgttcagcccgaccgctgcgccttatccggtaactatcgtcttgagtccaacccggtaagacacgacttatcgccactggcagcagccactggtaacaggattagcagagcgaggtatgtaggcggtgctacagagttcttgaagtggtggcctaactacggctacactagaagaacagtatttggtatctgcgctctgctgaagccagttaccttcggaaaaagagttggtagctcttgatccggcaaacaaaccaccgctggtagcggtggtttttttgtttgcaagcagcagattacgcgcagaaaaaaaggatctcaagaagatcctttgatcttttctacggggtctgacgctcagtggaacgaaaactcacgttaagggattttggtcatgagattatcaaaaaggatcttcacctagatccttttaaattaaaaatgaagttttaaatcaatctaaagtatatatgagtaaacttggtctgacagctcgaggcttggattctcaccaataaaaaacgcccggcggcaaccgagcgttctgaacaaatccagatggagttctgaggtcattactggatctatcaacaggagtccaagcgagctcgatatcaaattacgccccgccctgccactcatcgcagtactgttgtaattcattaagcattctgccgacatggaagccatcacaaacggcatgatgaacctgaatcgccagcggcatcagcaccttgtcgccttgcgtataatatttgcccatggtgaaaacgggggcgaagaagttgtccatattggccacgtttaaatcaaaactggtgaaactcacccagggattggctgagacgaaaaacatattctcaataaaccctttagggaaataggccaggttttcaccgtaacacgccacatcttgcgaatatatgtgtagaaactgccggaaatcgtcgtggtattcactccagagcgatgaaaacgtttcagtttgctcatggaaaacggtgtaacaagggtgaacactatcccatatcaccagctcaccgtctttcattgccatacgaaattccggatgagcattcatcaggcgggcaagaatgtgaataaaggccggataaaacttgtgcttatttttctttacggtctttaaaaaggccgtaatatccagctgaacggtctggttataggtacattgagcaactgactgaaatgcctcaaaatgttctttacgatgccattgggatatatcaacggtggtatatccagtgatttttttctccattttagcttccttagctcctgaaaatctcgataactcaaaaaatacgcccggtagtgatcttatttcattatggtgaaagttggaacctcttacgtgcccgatcaactcgagtgccacctgacgtctaagaaaccattattatcatgacattaacctataaaaataggcgtatcacgaggcagaatttcagataaaaaaaatccttagctttcgctaaggatgatttctggaattcgcggccgcttctagag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+</rdf:RDF>

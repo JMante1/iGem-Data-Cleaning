@@ -1,0 +1,22 @@
+LOCUS       Exported                  39 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 39)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..39
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     RBS             11..22
+                     /note="strong bacterial ribosome binding site (Elowitz and 
+                     Leibler, 2000)"
+ORIGIN
+        1 cgcttaaatc aaagaggaga aaataatcat gaccggtaa
+//

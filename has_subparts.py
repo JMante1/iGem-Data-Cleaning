@@ -63,71 +63,75 @@ def make_subpart_map(url, counter):
             
     return(genbank)
     
-##%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# #from url list collect all of the annotated pngs and the annotated gb
-# cwd = os.getcwd()
+# #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#from url list collect all of the annotated pngs and the annotated gb
+cwd = os.getcwd()
 
-# url_list = pd.read_csv(os.path.join(cwd,'terms_to_check_subparts.csv'), header = None)
+url_list = pd.read_csv(os.path.join(cwd,'terms_to_check_subparts.csv'), header = None)
 
-# for index, url in enumerate(url_list[0]):
-#     counter = index+100
-#     make_subpart_map(url, counter)
+for index, url in enumerate(url_list[0]):
+    counter = index+100
+    make_subpart_map(url, counter)
     
-# #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# #CONVERT Genebank to sbol
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#CONVERT Genebank to sbol
 
 
-# import glob
-# cwd = os.getcwd()
-# import os
-# import requests
+import glob
+cwd = os.getcwd()
+import os
+import requests
 
-# in_location = os.path.join(cwd, "subpartcheck", "")
-# out_location = os.path.join(cwd, "subpartcheck", "SBOL","")
+in_location = os.path.join(cwd, "subpartcheck", "")
+out_location = os.path.join(cwd, "subpartcheck", "SBOL","")
 
-# in_files = glob.glob(f'{in_location}*.gb')
+in_files = glob.glob(f'{in_location}*.gb')
 
-# for file_name in in_files:
+for file_name in in_files:
 
-#     #get the just filename put in and remove the .gb ending
-#     out_name = os.path.split(file_name)[1][:-3]
+    #get the just filename put in and remove the .gb ending
+    out_name = os.path.split(file_name)[1][:-3]
     
-#     out_file = os.path.join(out_location, f'{out_name}.xml')
-    
-    
-#     file = open(file_name,"r") 
-#     genbank = file.read()
-#     file.close()
-
-#     request = { 'options': {'language' : 'SBOL2',
-#                             'test_equality': False,
-#                             'check_uri_compliance': False,
-#                             'check_completeness': False,
-#                             'check_best_practices': False,
-#                             'fail_on_first_error': False,
-#                             'provide_detailed_stack_trace': False,
-#                             'uri_prefix': 'trial',
-#                             'version': '',
-#                             'insert_type': False
-#                                     },
-#                 'return_file': True,
-#                 'main_file': genbank
-#               }
-    
-#     resp = requests.post("https://validator.sbolstandard.org/validate/", json=request)
-#     content = resp.json()["result"]
+    out_file = os.path.join(out_location, f'{out_name}.xml')
     
     
-#     with open(out_file, 'w') as f:
-#             f.write(content)
+    file = open(file_name,"r") 
+    genbank = file.read()
+    file.close()
+
+    request = { 'options': {'language' : 'SBOL2',
+                            'test_equality': False,
+                            'check_uri_compliance': False,
+                            'check_completeness': False,
+                            'check_best_practices': False,
+                            'fail_on_first_error': False,
+                            'provide_detailed_stack_trace': False,
+                            'uri_prefix': 'trial',
+                            'version': '',
+                            'insert_type': False
+                                    },
+                'return_file': True,
+                'main_file': genbank
+              }
+    
+    resp = requests.post("https://validator.sbolstandard.org/validate/", json=request)
+    content = resp.json()["result"]
+    
+    
+    with open(out_file, 'w') as f:
+            f.write(content)
 
 
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 role_dict = {'0005836':'regulatory_region', '0000551':'polyA_signal_sequence',
  '0000316':'CDS', '0000167':'promoter', '0000553':'polyA_site', 
  '0005850':'primer_binding_site', '0000139':'ribosome_entry_site',
- '0000110':'sequence_feature', '0000296':'origin_of_replication'}
+ '0000110':'sequence_feature', '0000296':'origin_of_replication',
+ '0000141':'terminator', '0000418':'signal_peptide ', '0000673':'transcript',
+ '0001411':'biological_region', '0000188':'intron', '0000657':'repeat_region',
+ '0000165':'terminator_of_type_2_RNApol_III_promoter', '0000655':'ncRNA',
+ '0000204':'five_prime_UTR'}
 
 
 
@@ -140,7 +144,7 @@ import os
 cwd = os.getcwd()
 import glob
 
-role_looking_for = '0000141'
+role_looking_for = '0000139'
 in_location = os.path.join(cwd, "subpartcheck", "SBOL", "")
 
 in_files = glob.glob(f'{in_location}*.xml')
@@ -158,16 +162,17 @@ import pandas as pd
 Config.setOption('sbol_compliant_uris', True)
 Config.setOption('sbol_typed_uris', False)
 
-sequence_code = "[rdflib.term.URIRef('http://identifiers.org/so/SO:0002206')]"
+sequence_code = "['http://identifiers.org/so/SO:0002206']"
 
 file_names = in_files
 
 annotations_df = []
 
-# file_names = in_files[0:20]
+# file_names = in_files[0:1]
 
 
 
+track = 0
 for file_name in file_names:
     
     Non_interested_role = False
@@ -186,18 +191,22 @@ for file_name in file_names:
     annotation_start_stop = []
     annot_seq = []
     
+    print(track)
+    track = track+1
     for compdef in doc.componentDefinitions:
 #        print(compdef)
         for annotation in compdef.sequenceAnnotations:
-            # for loc in annotation.locations:
+            for loc in annotation.locations:
                 # print(f"{loc.start}, {loc.end}")
-            if str(annotation._roles) != sequence_code:
+                print("#")
+
+            if str(annotation.roles) != sequence_code:
                 for loc in annotation.locations:
                     annotation_start_stop.append([loc.start, loc.end])
                 split = os.path.split(str(annotation))[1]
                 annotations.append(split)
                 
-                role = str(annotation._roles)[50:-3]
+                role = str(annotation.roles)[31:-2]
                 
                 annotation_roles.append(role)
                 
@@ -211,7 +220,7 @@ for file_name in file_names:
                 
     
     for sequence in doc.sequences:
-        seq = str(sequence._elements)[22:-3]
+        seq = str(sequence.elements)[22:-3]
         seq_len = len(seq)
 
     for annot in annotation_start_stop:
@@ -220,8 +229,8 @@ for file_name in file_names:
         annot_seq = [seq]
             
     annotations_df.append([part_name, annotations, annotation_roles,
-                           num_anno, Non_interested_role, seq_len, role_name,
-                           annotation_start_stop, seq_len, seq, annot_seq])
+                            num_anno, Non_interested_role, seq_len, role_name,
+                            annotation_start_stop, seq_len, seq, annot_seq])
 
 
 
@@ -232,13 +241,13 @@ annotations_df = pd.DataFrame(annotations_df, columns = ["Name",
                         "role_name", "Annotation_Start_Stop", "Sequence_length",
                         "Sequence", "Annotations_Seq"]) 
 
-annotations_df.to_csv(os.path.join(cwd,"Annotations_short1.csv"))
+# annotations_df.to_csv(os.path.join(cwd,"Annotations_short1_RBS.csv"))
     
 pivot = pd.pivot_table(annotations_df, index=["non_interested_role_parts_present",
             'Number_of_Annotations'], aggfunc={
             'Number_of_Annotations':['count'], "Seq_len":['max','min','mean']})
 
-# pivot.to_csv(os.path.join(cwd,"Annotations_Pivot.csv")) #comment
+# pivot.to_csv(os.path.join(cwd,"Annotations_Pivot_RBS.csv")) #comment
     
 print(pivot)
 
@@ -246,23 +255,3 @@ print(pivot)
 
 
 ##############################################################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    

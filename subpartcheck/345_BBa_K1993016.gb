@@ -1,0 +1,32 @@
+LOCUS       Exported                 588 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 588)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..588
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     misc_feature    2..588
+                     /label=IRES2
+                     /note="internal ribosome entry site (IRES) of the 
+                     encephalomyocarditis virus (EMCV)"
+ORIGIN
+        1 gcccctctcc ctcccccccc cctaacgtta ctggccgaag ccgcttggaa taaggccggt
+       61 gtgcgtttgt ctatatgtta ttttccacca tattgccgtc ttttggcaat gtgagggccc
+      121 ggaaacctgg ccctgtcttc ttgacgagca ttcctagggg tctttcccct ctcgccaaag
+      181 gaatgcaagg tctgttgaat gtcgtgaagg aagcagttcc tctggaagct tcttgaagac
+      241 aaacaacgtc tgtagcgacc ctttgcaggc agcggaaccc cccacctggc gacaggtgcc
+      301 tctgcggcca aaagccacgt gtataagata cacctgcaaa ggcggcacaa ccccagtgcc
+      361 acgttgtgag ttggatagtt gtggaaagag tcaaatggct ctcctcaagc gtattcaaca
+      421 aggggctgaa ggatgcccag aaggtacccc attgtatggg atctgatctg gggcctcggt
+      481 acacatgctt tacatgtgtt tagtcgaggt taaaaaaacg tctaggcccc ccgaaccacg
+      541 gggacgtggt tttcctttga aaaacacgat gataatatgg ccacaacc
+//

@@ -23,6 +23,7 @@ SELECT
    ?notes
    ?source
    ?seq
+   ?descr
 
 WHERE {
     FILTER regex(?role1, "identifiers")
@@ -43,6 +44,7 @@ WHERE {
     OPTIONAL {?s sbh:mutableDescription ?descript} .
     OPTIONAL {?s sbh:mutableNotes ?notes} .
     OPTIONAL {?s sbh:mutableProvenance ?source} .
+    OPTIONAL {?s dcterms:description ?descr} .
   }
 
 Limit 10000 Offset replacehere

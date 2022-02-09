@@ -1,0 +1,36 @@
+LOCUS       Exported                 435 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 435)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..435
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     RBS             124..132
+                     /label=Shine-Dalgarno sequence
+                     /note="full consensus sequence for ribosome-binding sites 
+                     upstream of start codons in E. coli; complementary to a 
+                     region in the 3' end of the 16S rRNA (Chen et al., 1994)"
+     RBS             248..256
+                     /label=Shine-Dalgarno sequence
+                     /note="full consensus sequence for ribosome-binding sites 
+                     upstream of start codons in E. coli; complementary to a 
+                     region in the 3' end of the 16S rRNA (Chen et al., 1994)"
+ORIGIN
+        1 agatcgtcta atacctaaaa ttagtggaat actgttttcc tacgaaagtg gaggggccca
+       61 ggaagttaat cctggtagaa aaaattagca gtttgatctt gtagttacat gcccctcggt
+      121 aggtaaggag gtgttgtttc ctatctctgg tgccacagac cagtgtcata agttaaacta
+      181 tacctgcgtt aggataatag attcgggtgg gtagttaaaa gtcctagggg gagggagtgg
+      241 agtgttataa ggaggtgctc tcgtgtttgg ctgggggttg tggttagatg gtttgttgtt
+      301 ttattccgtt gcgtggtgag gaaaatatag agtgtatagg aggcagcgat aagggttgta
+      361 acggctgtta atagggttgt ggttttggct caattgaatg aggctgaaat agttacgagt
+      421 tctcctagga ggcga
+//

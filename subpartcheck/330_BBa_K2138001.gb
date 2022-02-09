@@ -1,0 +1,97 @@
+LOCUS       Exported                2283 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 2283)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..2283
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     misc_feature    1..22
+                     /label=BioBrick prefix
+                     /note="BioBrick prefix for parts that do not start with 
+                     ""ATG"""
+     misc_feature    193..213
+                     /label=BioBrick suffix
+                     /note="universal suffix for all parts"
+     misc_feature    214..234
+                     /label=BioBrick suffix
+                     /note="universal suffix for all parts"
+     terminator      235..292
+                     /label=his operon terminator
+                     /note="This putative transcriptin terminator from the E. 
+                     coli his operon has a 2-bp deletion introduced during 
+                     synthesis. Its efficiency has not been determined."
+     rep_origin      complement(487..1075)
+                     /direction=LEFT
+                     /label=ori
+                     /note="high-copy-number ColE1/pMB1/pBR322/pUC origin of 
+                     replication"
+     terminator      1258..1352
+                     /label=lambda t0 terminator
+                     /note="transcription terminator from phage lambda"
+     CDS             complement(1373..2032)
+                     /codon_start=1
+                     /gene="cat"
+                     /product="chloramphenicol acetyltransferase"
+                     /label=CmR
+                     /note="confers resistance to chloramphenicol"
+                     /translation="MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFL
+                     KTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSS
+                     LWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANM
+                     DNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA"
+     terminator      2216..2259
+                     /label=bacterial terminator
+                     /note="putative bacterial transcription terminator"
+     misc_feature    2262..2283
+                     /label=BioBrick prefix
+                     /note="BioBrick prefix for parts that do not start with 
+                     ""ATG"""
+ORIGIN
+        1 gaattcgcgg ccgcttctag aggttgacgg ctagctcagt cctaggtaca gtgctagctt
+       61 ttaaattaca attatttaca aacttaaatt ataccaaaat aaaaattaat aaaatacaaa
+      121 caaataaaaa tacatttaat acaaatattt taaacaataa attaacatat aaaaataaaa
+      181 aagacaggac cctactagta gcggccgctg cagtactagt agcggccgct gcagtccggc
+      241 aaaaaagggc aaggtgtcac caccctgccc tttttcttta aaaccgaaaa gattacttcg
+      301 cgttatgcag gcttcctcgc tcactgactc gctgcgctcg gtcgttcggc tgcggcgagc
+      361 ggtatcagct cactcaaagg cggtaatacg gttatccaca gaatcagggg ataacgcagg
+      421 aaagaacatg tgagcaaaag gccagcaaaa ggccaggaac cgtaaaaagg ccgcgttgct
+      481 ggcgtttttc cacaggctcc gcccccctga cgagcatcac aaaaatcgac gctcaagtca
+      541 gaggtggcga aacccgacag gactataaag ataccaggcg tttccccctg gaagctccct
+      601 cgtgcgctct cctgttccga ccctgccgct taccggatac ctgtccgcct ttctcccttc
+      661 gggaagcgtg gcgctttctc atagctcacg ctgtaggtat ctcagttcgg tgtaggtcgt
+      721 tcgctccaag ctgggctgtg tgcacgaacc ccccgttcag cccgaccgct gcgccttatc
+      781 cggtaactat cgtcttgagt ccaacccggt aagacacgac ttatcgccac tggcagcagc
+      841 cactggtaac aggattagca gagcgaggta tgtaggcggt gctacagagt tcttgaagtg
+      901 gtggcctaac tacggctaca ctagaagaac agtatttggt atctgcgctc tgctgaagcc
+      961 agttaccttc ggaaaaagag ttggtagctc ttgatccggc aaacaaacca ccgctggtag
+     1021 cggtggtttt tttgtttgca agcagcagat tacgcgcaga aaaaaaggat ctcaagaaga
+     1081 tcctttgatc ttttctacgg ggtctgacgc tcagtggaac gaaaactcac gttaagggat
+     1141 tttggtcatg agattatcaa aaaggatctt cacctagatc cttttaaatt aaaaatgaag
+     1201 ttttaaatca atctaaagta tatatgagta aacttggtct gacagctcga ggcttggatt
+     1261 ctcaccaata aaaaacgccc ggcggcaacc gagcgttctg aacaaatcca gatggagttc
+     1321 tgaggtcatt actggatcta tcaacaggag tccaagcgag ctcgatatca aattacgccc
+     1381 cgccctgcca ctcatcgcag tactgttgta attcattaag cattctgccg acatggaagc
+     1441 catcacaaac ggcatgatga acctgaatcg ccagcggcat cagcaccttg tcgccttgcg
+     1501 tataatattt gcccatggtg aaaacggggg cgaagaagtt gtccatattg gccacgttta
+     1561 aatcaaaact ggtgaaactc acccagggat tggctgagac gaaaaacata ttctcaataa
+     1621 accctttagg gaaataggcc aggttttcac cgtaacacgc cacatcttgc gaatatatgt
+     1681 gtagaaactg ccggaaatcg tcgtggtatt cactccagag cgatgaaaac gtttcagttt
+     1741 gctcatggaa aacggtgtaa caagggtgaa cactatccca tatcaccagc tcaccgtctt
+     1801 tcattgccat acgaaattcc ggatgagcat tcatcaggcg ggcaagaatg tgaataaagg
+     1861 ccggataaaa cttgtgctta tttttcttta cggtctttaa aaaggccgta atatccagct
+     1921 gaacggtctg gttataggta cattgagcaa ctgactgaaa tgcctcaaaa tgttctttac
+     1981 gatgccattg ggatatatca acggtggtat atccagtgat ttttttctcc attttagctt
+     2041 ccttagctcc tgaaaatctc gataactcaa aaaatacgcc cggtagtgat cttatttcat
+     2101 tatggtgaaa gttggaacct cttacgtgcc cgatcaactc gagtgccacc tgacgtctaa
+     2161 gaaaccatta ttatcatgac attaacctat aaaaataggc gtatcacgag gcagaatttc
+     2221 agataaaaaa aatccttagc tttcgctaag gatgatttct ggaattcgcg gccgcttcta
+     2281 gag
+//

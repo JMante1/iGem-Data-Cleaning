@@ -1,0 +1,40 @@
+LOCUS       Exported                 694 bp ds-DNA     linear   UNA 28-JUL-2020
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 694)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 28, 2020 from SnapGene Server 2.0.9
+            http://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..694
+                     /organism="unspecified"
+                     /mol_type="genomic DNA"
+     enhancer        47..426
+                     /label=CMV enhancer
+                     /note="human cytomegalovirus immediate early enhancer"
+     promoter        427..630
+                     /label=CMV promoter
+                     /note="human cytomegalovirus (CMV) immediate early 
+                     promoter"
+     misc_feature    674..694
+                     /label=BioBrick suffix
+                     /note="universal suffix for all parts"
+ORIGIN
+        1 gaattcgcgg ccgttctaga cgatgtacgg gccagatata cgcgttgaca ttgattattg
+       61 cctagttatt aatagtaatc aattacgggg tcattagttc atagcccata tatggagttc
+      121 cgcgttacat aacttacggt aaatggcccg cctggctgac cgcccaacga cccccgccca
+      181 ttgacgtcaa taatgacgta tgttcccata gtaacgccaa tagggacttt ccattgacgt
+      241 caatgggtgg agtatttacg gtaaactgcc cacttggcag tacatcaagt gtatcatatg
+      301 ccaagtacgc cccctattga cgtcaatgac ggtaaatggc ccgcctggca ttatgcccag
+      361 tacatgacct tatgggactt tcctacttgg cagtacatct acgtattagt catcgctatt
+      421 accatggtga tgcggttttg gcagtacatc aatgggcgtg gatagcggtt tgactcacgg
+      481 ggatttccaa gtctccaccc cattgacgtc aatgggagtt tgttttggca ccaaaatcaa
+      541 cgggactttc caaaatgtcg taacaactcc gccccattga cgcaaatggg cggtaggcgt
+      601 gtacggtggg aggtctatat aagcagagct ctctggctaa ctagagaacc cactgcttac
+      661 tggcttatcg aaatactagt agcggccgct gcag
+//
